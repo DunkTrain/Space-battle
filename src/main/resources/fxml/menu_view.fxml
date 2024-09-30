@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.cooper.controller.MenuController">
+    <Button fx:id="startButton" onAction="#startGame" text="Начать игру" layoutX="100.0" layoutY="100.0"/>
+    <Button fx:id="settingsButton" onAction="#openSettings" text="Настройки" layoutX="100.0" layoutY="150.0"/>
+    <Button fx:id="exitButton" onAction="#exit" text="Выход" layoutX="100.0" layoutY="200.0"/>
+</AnchorPane>

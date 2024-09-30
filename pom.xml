@@ -6,14 +6,21 @@
 
     <groupId>ru.cooper</groupId>
     <artifactId>space-battle</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Версии для зависимостей -->
+        <lombok.version>1.18.34</lombok.version>
+
+        <!-- SLF4J -->
+        <slf4j-api.version>2.0.16</slf4j-api.version>
+        <logback-classic.version>1.5.8</logback-classic.version>
+
+        <!-- JavaFX -->
         <javafx-fxml.version>23</javafx-fxml.version>
         <javafx-media.version>23</javafx-media.version>
         <javafx-controls.version>23</javafx-controls.version>
@@ -43,6 +50,26 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-media</artifactId>
             <version>${javafx-media.version}</version>
+        </dependency>
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- API Slf4j -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback-classic.version}</version>
         </dependency>
 
     </dependencies>
