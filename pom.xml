@@ -6,12 +6,62 @@
 
     <groupId>ru.cooper</groupId>
     <artifactId>space-battle</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Версии для зависимостей -->
+        <javafx-fxml.version>23</javafx-fxml.version>
+        <javafx-media.version>23</javafx-media.version>
+        <javafx-controls.version>23</javafx-controls.version>
+
+        <!-- Версии для плагинов -->
+        <javafx-maven-plugin.version>0.0.8</javafx-maven-plugin.version>
     </properties>
+
+    <dependencies>
+
+        <!-- GUI -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx-controls.version}</version>
+        </dependency>
+
+        <!-- FXML настройка интерфейса в виде XML -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>${javafx-fxml.version}</version>
+        </dependency>
+
+        <!-- Работа с мультимедийным контентом -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-media</artifactId>
+            <version>${javafx-media.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <!-- Плагин для запуска javafx приложения -->
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>${javafx-maven-plugin.version}</version>
+                <configuration>
+                    <!-- Точка входа в программу -->
+                    <mainClass>ru.cooper.Main</mainClass>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
 
 </project>
