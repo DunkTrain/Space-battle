@@ -14,4 +14,4 @@
 ## 🚀 Установка и запуск
 1. Склонируй репозиторий:
    ```bash
-   git clone [https://github.com/yourusername/space-battle.git](https://github.com/DunkTrain/Space-battle.git)
+   git clone https://github.com/DunkTrain/Space-battle.git
